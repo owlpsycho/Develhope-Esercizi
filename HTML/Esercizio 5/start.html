@@ -15,5 +15,104 @@
     </style>
   </head>
 
-  <body></body>
+  <body>
+    <div>
+      <form>
+        <label for="email">Inserisci l'email:</label>
+        <input type="email" name="email" required placeholder="text@email.com">
+      </form>
+    </div>
+    <br>
+    <div>
+      <form>
+        <label for="pass">Inserisci una password:</label>
+        <input type="password" name="pass" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password">
+      </form>
+    </div>
+    <br>
+    <div>
+      <form>
+        <label for="name">Nome</label>
+        <input type="text" name="name" required pattern="[A-Zaz]+" minlength="3" maxlength="15" placeholder="Mario">
+        <label for="surname">Cognome</label>
+        <input type="text" name="surname" required pattern="[A-Zaz]+" minlength="3" maxlength="15" placeholder="Rossi">
+      </form>
+    </div>
+    <br>
+    <div>
+      <form>
+        <label for="birth">Data di Nascita:</label>
+        <input type="date" name="birth" required>
+      </form>
+    </div>
+    <br>
+    <div>
+      <form>
+        <label for="telephone">Numero di Telefono:</label>
+        <select name="prefisso" required>
+          <option value="none" selected disabled hidden>Prefisso</option>  
+          <option value="Italia">+39</option>
+          <option value="Stati Uniti e Canada">+1</option>
+          <option value="Regno Unito">+44</option>
+          <option value="Germania">+49</option>
+          <option value="Francia">+33</option>
+          <option value="Cina">+86</option>
+          <option value="Giappone">+81</option>
+          <option value="India">+91</option>
+        </select>
+
+        <input type="number" name="telephone" required min="0" placeholder="numero">
+      </form>
+    </div>
+    <br>
+    <div>
+      <form>
+        <label for="plan">Scegli un Piano:</label>
+        <select name="plan" required>
+          <option value="free">Piano Gratuito</option>
+          <optgroup label="Piani a Pagamento">
+            <option value="basic">Piano Base (9,99€/month)</option>
+            <option value="advanced">Piano Avanzato (19,99€/month)</option>
+            <option value="premium">Piano Premium (29,99€/month)</option>
+          </optgroup>
+        </select>
+        
+        <input type="checkbox" name="pro" value="pro">
+          Piano Pro (Funzioni Extra, 49,99€/month)
+      </form>
+    </div>
+    <br>
+    <div>
+      <form>
+        <label for="creditcard">Numero della Carta di Credito:</label>
+        <input type="number" required min="0" minlength="16" maxlength="16" placeholder="Numero della Carta">
+
+        <label for="cvc">CVC:</label>
+        <input type="password" name="cvc" required maxlength="3" placeholder="Inserisci il CVC">
+
+        <label for="scadenza">Scadenza:</label>
+        <input type="month" name="scadenza" required>
+      </form>
+    </div>
+    <br>
+    <div>
+      <form>
+        <label for="via">Indirizzo:</label>
+        <input type="text" name="via" placeholder="Via, Numero civico" required>
+      
+        <label for="citta">Città:</label>
+        <input type="text" name="citta" placeholder="Città" required>
+      
+        <label for="cap">CAP:</label>
+        <input type="number" name="cap" placeholder="CAP" required>
+      
+        <label for="paese">Paese:</label>
+        <select name="paese" required>
+          <option value="none" selected disabled hidden>Seleziona un Paese</option> 
+          <option value="it">Italia</option>
+          <option value="other">Altro</option>
+        </select>
+      </form>
+    </div>
+  </body>
 </html>
