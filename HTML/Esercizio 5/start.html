@@ -20,34 +20,26 @@
       <form>
         <label for="email">Inserisci l'email:</label>
         <input type="email" name="email" required placeholder="text@email.com">
-      </form>
     </div>
     <br>
     <div>
-      <form>
         <label for="pass">Inserisci una password:</label>
         <input type="password" name="pass" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password">
-      </form>
     </div>
     <br>
     <div>
-      <form>
         <label for="name">Nome</label>
         <input type="text" name="name" required pattern="[A-Zaz]+" minlength="3" maxlength="15" placeholder="Mario">
         <label for="surname">Cognome</label>
         <input type="text" name="surname" required pattern="[A-Zaz]+" minlength="3" maxlength="15" placeholder="Rossi">
-      </form>
     </div>
     <br>
     <div>
-      <form>
         <label for="birth">Data di Nascita:</label>
         <input type="date" name="birth" required>
-      </form>
     </div>
     <br>
     <div>
-      <form>
         <label for="telephone">Numero di Telefono:</label>
         <select name="prefisso" required>
           <option value="none" selected disabled hidden>Prefisso</option>  
@@ -62,11 +54,9 @@
         </select>
 
         <input type="number" name="telephone" required min="0" placeholder="numero">
-      </form>
     </div>
     <br>
     <div>
-      <form>
         <label for="plan">Scegli un Piano:</label>
         <select name="plan" required>
           <option value="free">Piano Gratuito</option>
@@ -79,11 +69,9 @@
         
         <input type="checkbox" name="pro" value="pro">
           Piano Pro (Funzioni Extra, 49,99€/month)
-      </form>
     </div>
     <br>
     <div>
-      <form>
         <label for="creditcard">Numero della Carta di Credito:</label>
         <input type="number" required min="0" minlength="16" maxlength="16" placeholder="Numero della Carta">
 
@@ -92,11 +80,9 @@
 
         <label for="scadenza">Scadenza:</label>
         <input type="month" name="scadenza" required>
-      </form>
     </div>
     <br>
     <div>
-      <form>
         <label for="via">Indirizzo:</label>
         <input type="text" name="via" placeholder="Via, Numero civico" required>
       
@@ -112,6 +98,11 @@
           <option value="it">Italia</option>
           <option value="other">Altro</option>
         </select>
+    </div>
+    <br>
+    <div>
+      <button type="submit">Send</button>
+    </div>
       </form>
     </div>
   </body>
