@@ -1,0 +1,23 @@
+.card {
+    border: 2px solid darkgray;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.text {
+    padding-left: 10px;
+}
+
+.item1, .item2, .item3 {
+    border: 2px solid darkgray;
+    max-width: 280px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.link {
+    border: 2px solid darkgray;
+    max-width: 280px;
+    margin: 0 auto;
+    padding: 10px;
+}
