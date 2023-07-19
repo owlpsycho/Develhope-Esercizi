@@ -1,4 +1,4 @@
-#navSearchButton:hover {
+.navSearchButton:hover {
     background-color: green;
     color: white;
 }
