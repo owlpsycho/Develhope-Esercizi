@@ -1,0 +1,33 @@
+body {
+    display: grid;
+    grid-template-areas: 
+        "verde verde verde"
+        "giallo rosso blu"
+        "arancione arancione blu";
+}
+
+#green{
+    grid-area: verde;
+}
+
+#yellow{
+    grid-area: giallo;
+}
+
+#orange{
+    grid-area: arancione;
+}
+
+#red{
+    grid-area: rosso;
+}
+
+#blue{
+    grid-area: blu;
+}
+
+#yellow > ul, #red > ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, fr);
+}
