@@ -1,0 +1,1 @@
+Ho messo il media querry a 375 come mi chiede la consegna solo che anche se rimpicciolisco al massimo la finistra rimane troppo grande ma se con l'ispeziona simula un telefono funziona quindi è giusto. <3
