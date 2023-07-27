@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esercizio 2</title>
+    <title>Esercizio 9</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -13,13 +13,25 @@
             <ul>
                 <li><a href="#"><h3>Home</h3></a></li>
                 <li><a href="#"><h4>Link</h4></a></li>
-                <li>Dropdown<select name="dropdown"></select></li>
-                <br>
+                <li>Dropdown <select>
+                        <option selected disabled hidden></option>
+                        <option>option 1</option>
+                        <option>option 2</option>
+                        <option>option 3</option>
+                    </select>
+                </li>
                 <li><button disabled>Disabled</button></li>
             </ul>
-            <input type="search" name="searchbar" placeholder="Search">
-            <button type="submit" class="navSearchButton">Search</button>
-        </nav>
+            <form>
+                <input type="search" placeholder="Search">
+                <button type="submit" class="navSearchButton">Search</button>
+            </form>
+            <div class="hamburger-btn">
+                <button type="button">
+                    <img src="./hamburger-menu-svgrepo-com.svg">
+                </button>
+            </div>
+        </nav> 
     </header>
 </body>
 </html>

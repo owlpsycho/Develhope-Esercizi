@@ -1,4 +1,93 @@
-.navSearchButton:hover {
-    background-color: green;
+nav {
+    background-color: #232529;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav > a, nav > ul > li:first-child > a{
     color: white;
+    text-decoration: none;
+}
+
+nav > ul > li:nth-child(2) > a, nav > ul > li:nth-child(3) {
+    color: #a9a9a9;
+    text-decoration: none;
+}
+
+nav > ul > li:nth-child(3) > select {
+    background-color: transparent;
+    background-image: url(./down-chevron-svgrepo-com.svg);
+    background-size: 15px;
+    border: none;
+    appearance: none;
+    color: transparent;
+    outline: none;   
+    width: 15px;
+}
+
+nav > ul > li:last-child > button {
+    background-color: transparent;
+    border: none;
+    color: gray;
+    padding: 0;
+}
+
+nav > form {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+
+nav > form > input[type="search"] {
+    padding: 8px 12px;
+    border: 2px solid #ccc;
+    border-radius: 5px; 
+    width: 170px; 
+}
+
+.navSearchButton {
+    background-color: transparent;
+    color: white;
+    padding: 4px 6px;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.navSearchButton:hover {
+    color: green;
+    border-color: green;
+}
+
+.hamburger-btn > button {
+    background-color: transparent;
+    border: none;
+    display: none;
+    padding: 0;
+}
+
+.hamburger-btn > button:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+    nav>ul, nav>form {
+        display: none;
+    }
+
+    .hamburger-btn > button {
+        display: initial;
+    }
+
+    .hamburger-btn {
+        margin-left: auto;
+    }
 }
