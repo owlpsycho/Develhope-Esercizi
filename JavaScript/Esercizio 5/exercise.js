@@ -6,7 +6,9 @@ const person1 = {
 
 const person2 = person1;
 
-// Modify the property `firstName` of the `person2` in "Simon".
+person2.firstName = "Simon"
 
 console.log(person1);
 console.log(person2);
+
+// Le modifiche delle proprietà di person2 si riflettono anche in person1 perchè entrambi puntano allo stesso oggetto
