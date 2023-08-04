@@ -1,23 +1,16 @@
 function calculateSalary(role) {
-  let salary;
   switch (role) {
     case "ceo":
-      salary = "2200€"
-    break;
+      return "Il Salario è " + 2200+"€"
     case "manager":
-      salary = "1800€"
-    break;
+      return "Il Salario è " + 1800+"€"
     case "cto":
-      salary = "1800€"
-    break;
+      return "Il Salario è " + 1800+"€"
     case "developer":
-      salary = "1500€"
-    break;
+      return "Il Salario è " + 1500+"€"
     default: 
-      salary = "1000€"
-    break;
+      return "Il Salario è " + 1000+"€"
   }
-  return salary;
 }
 
 console.log(calculateSalary('ceo'));
