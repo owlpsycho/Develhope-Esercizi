@@ -1,5 +1,6 @@
 function nicknameMap(persons) {
-  // ...
+  const nicknames = persons.map((element) => element.name.toLowerCase() + '-' + element.age);
+  return nicknames;
 }
 
 const persons = [
