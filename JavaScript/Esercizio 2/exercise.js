@@ -1,13 +1,17 @@
-function nicknameMap(persons) {
-  const nicknames = []
-  for (i = 0; i < persons.length; i++) {
-    const nickname = "nickname: " + persons[i].name.toLowerCase() + "-" + persons[i].age;
-    nicknames.push(nickname);
-  }
+// function nicknameMap(persons) {
+//   const nicknames = []
+//   for (i = 0; i < persons.length; i++) {
+//     const nickname = "nickname: " + persons[i].name.toLowerCase() + "-" + persons[i].age;
+//     nicknames.push(nickname);
+//   }
 
+//   return nicknames;
+// }
+
+function nicknameMap(persons) {
+  const nicknames = persons.map((element) => element.name.toLowerCase() + '-' + element.age);
   return nicknames;
 }
-
 
 const persons = [
   { name: 'Paul', age: 16 },
