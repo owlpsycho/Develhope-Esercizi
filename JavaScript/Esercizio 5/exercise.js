@@ -4,7 +4,7 @@ const person1 = {
   age: 25,
 };
 
-const person2 = person1;
+const person2 = {...person1};
 
 person2.firstName = "Simon"
 
