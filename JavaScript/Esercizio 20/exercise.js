@@ -18,7 +18,15 @@ class Circle {
 }
 
 class AreaCalculator {
-  // ...
+  static calculate (forma){
+    if (forma instanceof Square) {
+      return forma.side * forma.side
+    }else if (forma instanceof Rectangle){
+      return forma.width * forma.height
+    }else {
+      return Math.round(forma.radius * forma.radius * Math.PI)
+    }
+  }
 }
 
 const square = new Square(4);
