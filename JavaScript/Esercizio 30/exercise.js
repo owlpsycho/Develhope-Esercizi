@@ -9,6 +9,12 @@ class Person {
   toJson() {
     return JSON.stringify(this);
   }
+
+  static fromJson(json) {
+    const parsedObj = JSON.parse(json);
+    const {id, firstName, lastName, age} = parsedObj;
+    return new Person(id, firstName, lastName, age);
+  }
 }
 
 const json = '{"id":1,"firstName":"Mario","lastName":"Rossi","age":25}';
