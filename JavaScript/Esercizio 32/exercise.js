@@ -3,8 +3,14 @@ const person = {
   firstName: 'Mario',
   lastName: 'Rossi',
   age: 25,
+  toJSON() {
+    return {
+      id: this.id,
+      age: this.age
+    };
+  }
 };
 
 const json = JSON.stringify(person);
 
-console.log(json); // Should return: { id: 1, age: 25 }
+console.log(json); // Should return: {"id":1,"age":25}
