@@ -3,6 +3,6 @@ function repeatHello(callback) {
     setTimeout(() => clearInterval(interval), 5000);
 }
 
-const sayHello = () => console.log("Hello");v   
+const sayHello = () => console.log("Hello");   
 
 repeatHello(sayHello)
