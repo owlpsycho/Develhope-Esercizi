@@ -1,4 +1,4 @@
-const isLogged = false;
+const isLogged = true;
 
 const logCheeck = (isLogged) => {
   return new Promise((resolve, reject) => {
@@ -20,7 +20,7 @@ const getUserInfo = (inputNumber) => {
       } else {
         reject("Error: Number isn't greater than 0.5")
       }
-    }, 1000)
+    })
   })
 }
 
