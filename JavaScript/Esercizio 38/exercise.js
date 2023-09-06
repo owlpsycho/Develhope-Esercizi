@@ -1,4 +1,4 @@
-const isLogged = false;
+const isLogged = true;
 
 const logCheeck = (isLogged) => {
   return new Promise((resolve, reject) => {
