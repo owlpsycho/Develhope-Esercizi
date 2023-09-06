@@ -20,7 +20,7 @@ const getUserInfo = (inputNumber) => {
       } else {
         reject(new Error ("Number isn't greater than 0.5"))
       }
-    }, 1000)
+    })
   })
 }
 
