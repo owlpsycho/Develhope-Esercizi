@@ -1,12 +1,14 @@
 const number = 15;
-let checkNumber = new Promise ((resolve, reject) => {
-    if (number > 10){
-        resolve (number)
-    }else {
-        reject ("Error: The Number isn't greater than 10")
-    }
-})
+const checkNumber = (number) => {
+    return new Promise((resolve, reject) => {
+      if (number >= 10) {
+        resolve(`${number} is greater than or equal to 10.`);
+      } else {
+        reject(`${number} isn't greater 10.`);
+      }
+    });
+  };
 
-checkNumber
+checkNumber(number)
     .then ((val) => console.log(val))
     .catch ((err) => console.error(err))
