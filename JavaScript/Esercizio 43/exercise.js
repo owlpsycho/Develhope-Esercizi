@@ -7,10 +7,10 @@ const user = {
 function saveUser(user) {
   try {
     const userJSON = JSON.stringify(user);
-    localStorage.setItem('user', userJSON);
-    console.log('User saved to localStorage.');
+    localStorage.setItem("user", userJSON);
+    console.log("User salvato nel localStorage.");
   } catch (error) {
-    console.error('Error saving user to localStorage:', error);
+    console.error(error);
   }
 }
 
