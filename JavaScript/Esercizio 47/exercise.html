@@ -20,5 +20,9 @@
 </html>
 
 <script>
-  // code here
+  const labels = document.querySelectorAll("label")
+  const inputs = document.querySelectorAll(".form-input")
+  labels.forEach((label, index) => {
+        console.log(`${label.textContent} ${inputs[index].value}`);
+      });
 </script>
