@@ -47,7 +47,7 @@ class DetailedCurrency extends Currency {
     // Change the visibility modifier on this method so it can be called
     // by code outside of this class.
 
-    public describeBankNotes() {
+    public describeBankNotes(): void {
         // Change the visibility of the parent class `name` field so
         // that its value can be read here in this child class method.
 
